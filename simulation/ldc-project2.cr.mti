@@ -1,0 +1,36 @@
+{C:/Users/Elias g/projects/lcd-project2/main_tb.v} {1 {vlog -work work {C:/Users/Elias g/projects/lcd-project2/main_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module main_tb
+
+Top level modules:
+	main_tb
+
+} {} {}} {C:/Users/Elias g/projects/lcd-project2/main.sv} {1 {vlog -work work -sv {C:/Users/Elias g/projects/lcd-project2/main.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module main
+
+Top level modules:
+	main
+
+} {} {}} {C:/Users/Elias g/projects/lcd-project2/lcd_driver.sv} {1 {vlog -work work -sv {C:/Users/Elias g/projects/lcd-project2/lcd_driver.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module lcd_driver
+
+Top level modules:
+	lcd_driver
+
+} {} {}} {C:/Users/Elias g/projects/lcd-project2/rom.sv} {1 {vlog -work work -sv {C:/Users/Elias g/projects/lcd-project2/rom.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module rom
+
+Top level modules:
+	rom
+
+} {} {}} {C:/Users/Elias g/projects/lcd-project2/lcd_en_clk.sv} {1 {vlog -work work -sv {C:/Users/Elias g/projects/lcd-project2/lcd_en_clk.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module lcd_en_clk
+
+Top level modules:
+	lcd_en_clk
+
+} {} {}}

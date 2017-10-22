@@ -1,0 +1,9 @@
+
+State Machine - |main|lcd_driver:lcd|lcd_en_clk:en_clk|state
+Name state.rst_cnt_1 state.MID_HIGH state.EN_1 state.rst_cnt_0 state.EN_0 state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.EN_0 0 0 0 0 1 1 
+state.rst_cnt_0 0 0 0 1 0 1 
+state.EN_1 0 0 1 0 0 1 
+state.MID_HIGH 0 1 0 0 0 1 
+state.rst_cnt_1 1 0 0 0 0 1 

@@ -1,0 +1,44 @@
+module lcd_en_clk (
+	input rst,
+	input init_en,
+	input clk,
+	output logic en,
+	output logic in_mid_high
+);
+ 
+logic [16:0] counter;
+logic counter_rst;
+logic counter_ld;
+
+enum logic [2:0] {IDLE, EN_0, rst_cnt_0, EN_1, MID_HIGH, rst_cnt_1} state, nxt_state;
+
+always_comb en = (state==IDLE) | (state==EN_1) | (state==rst_cnt_1) | (state==MID_HIGH);
+always_comb counter_rst = (state==IDLE)|(state==rst_cnt_0)|(state==rst_cnt_1);
+always_comb counter_ld = (state==EN_0)|(state==EN_1)|(state==MID_HIGH);
+always_comb in_mid_high = (state==MID_HIGH);
+
+initial state = IDLE;
+
+
+always_comb begin
+	case (state)
+		IDLE		: nxt_state = (init_en)? EN_0 : IDLE;
+		EN_0		: nxt_state = (counter==129629)? rst_cnt_0 : EN_0;	//92592
+		rst_cnt_0	: nxt_state = EN_1;
+		EN_1		: nxt_state = (counter==32407)? MID_HIGH : EN_1;		//23148
+		MID_HIGH	: nxt_state = (counter==64814)? rst_cnt_1 : MID_HIGH;	//46296
+		rst_cnt_1	: nxt_state = EN_0;
+	endcase
+end
+
+always_ff @(posedge clk)
+	state <= (rst)? IDLE : nxt_state;
+
+always_ff @(posedge clk) begin
+	if (counter_rst) 
+		counter <= 17'd0;
+	else if (counter_ld)
+		counter <= counter + 17'd1;
+end
+	
+endmodule

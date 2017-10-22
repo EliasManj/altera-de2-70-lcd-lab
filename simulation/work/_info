@@ -1,0 +1,112 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Elias g\projects\lcd-project\lcd-simulations
+vlcd_driver
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+Z2 !s100 Oced0mh9W@ECZCVKiHe0e2
+Z3 IdL5RjioDR9^3?7059jo7^1
+Z4 VTTSV]Gb5INI=_F<azQK2G3
+Z5 !s105 lcd_driver_sv_unit
+S1
+Z6 dC:\Users\Elias g\projects\lcd-project2\simulation
+w1507914492
+Z7 8C:/Users/Elias g/projects/lcd-project2/lcd_driver.sv
+Z8 FC:/Users/Elias g/projects/lcd-project2/lcd_driver.sv
+L0 1
+Z9 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1507915308.217000
+!s107 C:/Users/Elias g/projects/lcd-project2/lcd_driver.sv|
+Z10 !s90 -reportprogress|300|-work|work|-sv|C:/Users/Elias g/projects/lcd-project2/lcd_driver.sv|
+!s101 -O0
+Z11 o-work work -sv -O0
+vlcd_en_clk
+R1
+Z12 IhOnTX0f;_:KoM461PhRD83
+Z13 VdLfUmDL?aSN07R2RmToSb0
+Z14 !s105 lcd_en_clk_sv_unit
+S1
+R6
+Z15 w1507855368
+Z16 8C:/Users/Elias g/projects/lcd-project2/lcd_en_clk.sv
+Z17 FC:/Users/Elias g/projects/lcd-project2/lcd_en_clk.sv
+L0 1
+R9
+r1
+31
+Z18 !s90 -reportprogress|300|-work|work|-sv|C:/Users/Elias g/projects/lcd-project2/lcd_en_clk.sv|
+R11
+Z19 !s100 _JI1000j@6kFD:]?n@]Bn3
+Z20 !s108 1507855416.017000
+Z21 !s107 C:/Users/Elias g/projects/lcd-project2/lcd_en_clk.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vmain
+R1
+Z22 IVMI:cBjol5bI8`2e9<F^Q1
+Z23 V_PHcBdYZkn61UJ`W1XP4D0
+Z24 !s105 main_sv_unit
+S1
+R6
+Z25 w1507855356
+Z26 8C:/Users/Elias g/projects/lcd-project2/main.sv
+Z27 FC:/Users/Elias g/projects/lcd-project2/main.sv
+L0 1
+R9
+r1
+31
+Z28 !s90 -reportprogress|300|-work|work|-sv|C:/Users/Elias g/projects/lcd-project2/main.sv|
+R11
+Z29 !s100 E=l0^j4SQ04WaGdk`2fO;2
+Z30 !s108 1507855416.267000
+Z31 !s107 C:/Users/Elias g/projects/lcd-project2/main.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vmain_tb
+Z32 !s100 AVVRE]:5OC0CJIk@oT^F@2
+Z33 IJGJ@CX4P5=D`KmIfAa2O21
+Z34 VDFCamQe8X=<UABF>6bJ7X2
+R6
+Z35 w1507845986
+Z36 8C:/Users/Elias g/projects/lcd-project2/main_tb.v
+Z37 FC:/Users/Elias g/projects/lcd-project2/main_tb.v
+L0 3
+R9
+r1
+31
+Z38 !s90 -reportprogress|300|-work|work|C:/Users/Elias g/projects/lcd-project2/main_tb.v|
+Z39 o-work work -O0
+Z40 !s108 1507855416.587000
+Z41 !s107 C:/Users/Elias g/projects/lcd-project2/main_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vrom
+R1
+Z42 IQX<hAh^;>hL]oc<6fmHab3
+Z43 V<YzQBzAY:82GXaG9D6CZA1
+Z44 !s105 rom_sv_unit
+S1
+R6
+Z45 w1507858208
+Z46 8C:/Users/Elias g/projects/lcd-project2/rom.sv
+Z47 FC:/Users/Elias g/projects/lcd-project2/rom.sv
+L0 1
+R9
+r1
+31
+Z48 !s90 -reportprogress|300|-work|work|-sv|C:/Users/Elias g/projects/lcd-project2/rom.sv|
+R11
+!i10b 1
+Z49 !s100 BA0ZD?`9S[lBPM@9LCK5=1
+!s85 0
+Z50 !s108 1507913099.393000
+Z51 !s107 C:/Users/Elias g/projects/lcd-project2/rom.sv|
+!s101 -O0

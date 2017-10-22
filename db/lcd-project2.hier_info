@@ -1,0 +1,120 @@
+|main
+go => go.IN1
+rst => rst.IN1
+clk => clk.IN2
+LCD_DATA[0] <= lcd_driver:lcd.db_out
+LCD_DATA[1] <= lcd_driver:lcd.db_out
+LCD_DATA[2] <= lcd_driver:lcd.db_out
+LCD_DATA[3] <= lcd_driver:lcd.db_out
+LCD_DATA[4] <= lcd_driver:lcd.db_out
+LCD_DATA[5] <= lcd_driver:lcd.db_out
+LCD_DATA[6] <= lcd_driver:lcd.db_out
+LCD_DATA[7] <= lcd_driver:lcd.db_out
+LCD_RW <= lcd_driver:lcd.rw
+LCD_EN <= lcd_driver:lcd.en
+LCD_RS <= lcd_driver:lcd.rs
+LCD_ON <= lcd_driver:lcd.on
+
+
+|main|lcd_driver:lcd
+clk => clk.IN1
+init => init.IN1
+db[0] => Selector11.IN3
+db[1] => Selector10.IN4
+db[2] => Selector9.IN4
+db[3] => Selector8.IN4
+db[4] => Selector7.IN4
+db[5] => Selector6.IN4
+db[6] => Selector5.IN3
+db[7] => Selector4.IN3
+rst => rst.IN1
+rw_in => rw.DATAIN
+init_done <= init_done.DB_MAX_OUTPUT_PORT_TYPE
+rs <= rs.DB_MAX_OUTPUT_PORT_TYPE
+en <= en~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rw <= rw_in.DB_MAX_OUTPUT_PORT_TYPE
+on <= state~12.DB_MAX_OUTPUT_PORT_TYPE
+en_out <= lcd_en_clk:en_clk.en
+db_out[0] <= Selector11.DB_MAX_OUTPUT_PORT_TYPE
+db_out[1] <= Selector10.DB_MAX_OUTPUT_PORT_TYPE
+db_out[2] <= Selector9.DB_MAX_OUTPUT_PORT_TYPE
+db_out[3] <= Selector8.DB_MAX_OUTPUT_PORT_TYPE
+db_out[4] <= Selector7.DB_MAX_OUTPUT_PORT_TYPE
+db_out[5] <= Selector6.DB_MAX_OUTPUT_PORT_TYPE
+db_out[6] <= Selector5.DB_MAX_OUTPUT_PORT_TYPE
+db_out[7] <= Selector4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|lcd_driver:lcd|lcd_en_clk:en_clk
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+init_en => Selector0.IN4
+init_en => nxt_state.IDLE.DATAB
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => state~1.DATAIN
+en <= en.DB_MAX_OUTPUT_PORT_TYPE
+in_mid_high <= in_mid_high.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|rom:rom0
+clk => ~NO_FANOUT~
+addr[0] => rom.RADDR
+addr[1] => rom.RADDR1
+addr[2] => rom.RADDR2
+addr[3] => rom.RADDR3
+addr[4] => rom.RADDR4
+addr[5] => rom.RADDR5
+data[0] <= rom.DATAOUT
+data[1] <= rom.DATAOUT1
+data[2] <= rom.DATAOUT2
+data[3] <= rom.DATAOUT3
+data[4] <= rom.DATAOUT4
+data[5] <= rom.DATAOUT5
+data[6] <= rom.DATAOUT6
+data[7] <= rom.DATAOUT7
+data[8] <= rom.DATAOUT8
+data[9] <= rom.DATAOUT9
+data[10] <= rom.DATAOUT10
+data[11] <= rom.DATAOUT11
+data[12] <= rom.DATAOUT12
+data[13] <= rom.DATAOUT13
+data[14] <= rom.DATAOUT14
+data[15] <= rom.DATAOUT15
+data[16] <= rom.DATAOUT16
+data[17] <= rom.DATAOUT17
+data[18] <= rom.DATAOUT18
+data[19] <= rom.DATAOUT19
+data[20] <= rom.DATAOUT20
+data[21] <= rom.DATAOUT21
+data[22] <= rom.DATAOUT22
+data[23] <= rom.DATAOUT23
+data[24] <= rom.DATAOUT24
+data[25] <= rom.DATAOUT25
+data[26] <= rom.DATAOUT26
+data[27] <= rom.DATAOUT27
+data[28] <= rom.DATAOUT28
+data[29] <= rom.DATAOUT29
+data[30] <= rom.DATAOUT30
+data[31] <= rom.DATAOUT31
+
+

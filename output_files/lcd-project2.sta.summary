@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clk'
+Slack : -2.186
+TNS   : -32.483
+
+Type  : Slow Model Setup 'lcd_driver:lcd|lcd_en_clk:en_clk|state.EN_0'
+Slack : -1.700
+TNS   : -30.397
+
+Type  : Slow Model Hold 'clk'
+Slack : -2.708
+TNS   : -4.057
+
+Type  : Slow Model Hold 'lcd_driver:lcd|lcd_en_clk:en_clk|state.EN_0'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -1.380
+TNS   : -27.380
+
+Type  : Slow Model Minimum Pulse Width 'lcd_driver:lcd|lcd_en_clk:en_clk|state.EN_0'
+Slack : -0.500
+TNS   : -28.000
+
+Type  : Fast Model Setup 'clk'
+Slack : -0.708
+TNS   : -3.369
+
+Type  : Fast Model Setup 'lcd_driver:lcd|lcd_en_clk:en_clk|state.EN_0'
+Slack : -0.311
+TNS   : -2.939
+
+Type  : Fast Model Hold 'clk'
+Slack : -1.691
+TNS   : -2.994
+
+Type  : Fast Model Hold 'lcd_driver:lcd|lcd_en_clk:en_clk|state.EN_0'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk'
+Slack : -1.380
+TNS   : -27.380
+
+Type  : Fast Model Minimum Pulse Width 'lcd_driver:lcd|lcd_en_clk:en_clk|state.EN_0'
+Slack : -0.500
+TNS   : -28.000
+
+------------------------------------------------------------

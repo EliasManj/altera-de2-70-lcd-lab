@@ -1,0 +1,9 @@
+module lcd_driver(
+	output LCD_DATA,
+	output LCD_RW,
+	output LCD_EN,
+	output LCD_RS,
+	output LCD_ON
+);
+
+endmodule

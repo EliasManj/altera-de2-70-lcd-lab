@@ -1,0 +1,33 @@
+`timescale 1ns/1ps
+
+module main_tb;
+
+//Inputs programcounter
+reg clk;
+reg counterLd;
+reg counterRst;
+wire [6:0] HEX6_D;
+wire [6:0] HEX7_D;
+
+
+main2 myMain2(.clk(clk), .SW17(counterLd), .SW16(counterRst), .HEX6_D(HEX6_D), .HEX7_D(HEX7_D));
+
+initial begin
+
+	clk = 0;
+	counterRst = 1;
+	counterLd = 0;
+
+	
+	#19;
+	
+	counterRst = 0;
+	counterLd = 1;
+	
+end
+
+initial begin
+    forever #18 clk=~clk;		//Every 18ns invert, Clock cycle of 36ns -> 28MHZ
+end
+
+endmodule
